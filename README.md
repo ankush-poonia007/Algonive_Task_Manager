@@ -8,8 +8,8 @@ A feature-rich, responsive task management application built with vanilla JavaSc
 
 ---
 
-![Task Manager Screenshot](https://github.com/ankush-poonia007/Algonive_Task_Manager/blob/main/assets/task-manager-screenshot.png?raw=true)---
-![Task Manager Screenshot](https://github.com/ankush-poonia007/Algonive_Task_Manager/blob/main/assets/screenshot-modal.png?raw=true))----
+![Task Manager Screenshot](https://github.com/ankush-poonia007/Algonive_Task_Manager/blob/main/assets/task-manager-screenshot.png?raw=true)
+![Task Manager Screenshot](https://github.com/ankush-poonia007/Algonive_Task_Manager/blob/main/assets/screenshot-modal.png?raw=true)
 
 ## About This Project
 
