@@ -8,11 +8,7 @@ A feature-rich, responsive task management application built with vanilla JavaSc
 
 ---
 
-![Task Manager Screenshot](https://placehold.co/600x400/4a90e2/ffffff?text=Your+App+Screenshot+Here)
-
-*(Remember to replace this with a real screenshot of your application!)*
-
----
+![Task Manager Screenshot](https://github.com/ankush-poonia007/Algonive_Task_Manager/blob/main/task-manager-screenshot.png?raw=true)---
 
 ## About This Project
 
