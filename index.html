@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <button id="add-task-btn" class="button-primary">Add New Task</button>
+        </header>
+        
+        <div class="controls">
+            <input type="search" id="search-bar" placeholder="Search tasks...">
+            <select id="sort-tasks">
+                <option value="default">Sort by</option>
+                <option value="date-asc">Due Date</option>
+                <option value="priority">Priority</option>
+            </select>
+            <button id="clear-completed-btn" class="button-tertiary">Clear Completed</button>
+        </div>
+        
+        <main id="task-list-container">
+            </main>
+    </div>
+
+    <div id="task-modal" class="modal-overlay">
+        <div class="modal-content">
+            <form id="task-form">
+                <h2 id="modal-title">Add Task</h2>
+                <input type="hidden" id="task-id">
+                
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <textarea id="task-desc" placeholder="A short description..."></textarea>
+                <label for="task-due-date">Due Date:</label>
+                <input type="date" id="task-due-date" required>
+                <label for="task-priority">Priority:</label>
+                <select id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <div class="modal-actions">
+                    <button type="submit" class="button-primary">Save Task</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
