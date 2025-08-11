@@ -2,7 +2,7 @@
 
 A feature-rich, responsive task management application built with vanilla JavaScript, HTML, and CSS. This project allows users to add, edit, sort, and organize their tasks with a modern and intuitive user interface.
 
-**Live Demo:** [**[https://github.com/ankush-poonia007.github.io/Algonive_Task_Manager/](https://github.com/ankush-poonia007/Algonive_Task_Manager)**] 
+**Live Demo:** [**[https://ankush-poonia007.github.io/Algonive_Task_Manager/](https://ankush-poonia007.github.io/Algonive_Task_Manager/)**] 
 
 *(This link will work after you deploy the project on GitHub Pages)*
 
