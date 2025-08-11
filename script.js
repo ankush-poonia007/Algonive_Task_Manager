@@ -294,12 +294,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============== 7. Initial Render ==============
     renderTasks();
     setInterval(() => {
-        const now = new Date();
-        state.tasks.forEach(task => {
-            const dueDate = new Date(task.dueDate);
-            if (!task.completed && dueDate < now && (now - dueDate < 1000 * 60 * 60)) {
-                // showToast(`Task "${task.title}" is past due!`, 'error');
-            }
-        });
-    }, 60000 * 30);
+    const now = new Date();
+    state.tasks.forEach(task => {
+        const dueDate = new Date(task.dueDate);
+        const timeDiff = dueDate - now; // Difference in milliseconds
+
+        // Check if the task is not completed and is due within the next 24 hours
+        if (!task.completed && timeDiff > 0 && timeDiff < 24 * 60 * 60 * 1000) {
+            showToast(`Reminder: Task "${task.title}" is due soon!`, 'error');
+        }
+    });
+}, 60000 * 30); // Check every 30 minutes
 });
